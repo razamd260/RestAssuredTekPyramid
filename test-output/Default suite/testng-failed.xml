@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PracticeValidation.OpenSourceToolforjsonPathextraction">
+      <class name="Practice.postRequest.Type.PostReq_Via_JSONFile">
         <methods>
-          <include name="ExtractVerify"/>
+          <include name="postRequestToServer"/>
         </methods>
-      </class> <!-- PracticeValidation.OpenSourceToolforjsonPathextraction -->
+      </class> <!-- Practice.postRequest.Type.PostReq_Via_JSONFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

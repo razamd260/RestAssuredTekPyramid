@@ -1,20 +1,27 @@
 package pojoclass.utility;
 
 public class ProjectPojo {
-
-	  private String ProjectName;
-	  private String status;
-	  private String craetedBy;
-	  private int teamsize;
-	public ProjectPojo(String projectName, String status, String craetedBy, int teamsize) {
+	 
+	  String ProjectName;
+	   String status;
+	   String createdBy; 
+	  int teamsize;
+	  
+	  
+	  
+	  
+	  public ProjectPojo(String projectName, String status, String createdBy, int teamsize) {
 		super();
 		ProjectName = projectName;
 		this.status = status;
-		this.craetedBy = craetedBy;
+		this.createdBy = createdBy;
 		this.teamsize = teamsize;
 	}
-	
-	public ProjectPojo() {}  
+
+	public ProjectPojo() {
+		// TODO Auto-generated constructor stub
+	}
+	  
 	public String getProjectName() {
 		return ProjectName;
 	}
@@ -27,11 +34,11 @@ public class ProjectPojo {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getCraetedBy() {
-		return craetedBy;
+	public String getCreatedBy() {
+		return createdBy;
 	}
-	public void setCraetedBy(String craetedBy) {
-		this.craetedBy = craetedBy;
+	public void setCreatedBy(String craetedBy) {
+		this.createdBy = craetedBy;
 	}
 	public int getTeamsize() {
 		return teamsize;
@@ -39,5 +46,7 @@ public class ProjectPojo {
 	public void setTeamsize(int teamsize) {
 		this.teamsize = teamsize;
 	}
-	  
+	
+	
+		  
 }
