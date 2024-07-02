@@ -21,9 +21,9 @@ public class VarifyResponseBody_Vai_JsonPath {
 		         when().get("http://49.249.28.218:8091/projects-paginated");
 		         response.then().log().all();
 		         JsonPath jPath = response.jsonPath();
-		         System.out.println(jPath.get("numberOfElements"));
-		         System.out.println(jPath.get("pageable.sort.unsorted"));
-		         System.out.println(jPath.get("content.projectId"));
+//		         System.err.println(jPath.get("numberOfElements"));
+//		         System.out.println(jPath.get("pageable.sort.unsorted"));
+//		         System.out.println(jPath.get("content.projectId"));
 		         
 		         
 		         

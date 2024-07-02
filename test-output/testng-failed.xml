@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.postRequest.Type.PostReq_Via_JSONFile">
+      <class name="Run1_JacksonSerTest">
         <methods>
-          <include name="postRequestToServer"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- Practice.postRequest.Type.PostReq_Via_JSONFile -->
+      </class> <!-- Run1_JacksonSerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

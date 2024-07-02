@@ -1,12 +1,10 @@
 package Practice_Ser_Deseria;
 import java.io.File;
-import java.io.IOException;
+
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.core.exc.StreamWriteException;
-import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
@@ -28,31 +26,33 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 class Project1{
-	private String ProjectName;
+	String ProjectName;
 	@JsonProperty(value="Create By")
-	private String CreateBy;
-	private int teamsize;
-	private String status;
+	String CreateBy;
+	int teamsize;
+	String status;
 	
-	public Project1() { }
-	public Project1(String projectName, String createBy, int teamsize, String status) {
+	private Project1() { }
+
+	public Project1(String ProjectName, String CreateBy, int teamsize, String status) {
 		super();
-		ProjectName = projectName;
-		CreateBy = createBy;
+		this.ProjectName = ProjectName;
+		this.CreateBy = CreateBy;
 		this.teamsize = teamsize;
 		this.status = status;
 	}
+
 	public String getProjectName() {
 		return ProjectName;
 	}
-	public void setProjectName(String projectName) {
-		ProjectName = projectName;
+	public void setProjectName(String ProjectName) {
+		this.ProjectName = ProjectName;
 	}
 	public String getCreateBy() {
 		return CreateBy;
 	}
-	public void setCreateBy(String createBy) {
-		CreateBy = createBy;
+	public void setCreateBy(String CreateBy) {
+		this.CreateBy = CreateBy;
 	}
 	public int getTeamsize() {
 		return teamsize;
@@ -75,9 +75,9 @@ class Project1{
 
 public class Run1_JacksonSerTest_Annotation {
 	public static void main(String[] args) throws Throwable {
-		Project pobj=new Project("Orange","Noushad",10,"Create");  // Java Object
+		Project1 pobj=new Project1("Orange","Noushad",10,"AtWork");  // Java Object
 		ObjectMapper objmapper=new ObjectMapper();
-		objmapper.writeValue(new File("./project.json"), pobj);// serialization is done   
+		objmapper.writeValue(new File("./project03.json"), pobj);// serialization is done   
 		System.out.println("=======End=========");
 		
 		

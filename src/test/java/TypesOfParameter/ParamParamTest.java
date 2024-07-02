@@ -10,7 +10,7 @@ public class ParamParamTest {
 
 	  @Test
 	  public void sampleTest() {
-		  given().contentType(ContentType.JSON).queryParam("teamSize", 10).
+		  given().contentType(ContentType.JSON).param("teamSize", 10).
 		      
 		      when().get("http://49.249.28.218:8091/project"). 
 		          

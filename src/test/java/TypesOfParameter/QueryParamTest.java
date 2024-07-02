@@ -10,7 +10,7 @@ public class QueryParamTest {
 
 	  @Test
 	  public void sampleTest() {
-		  given().param("teamSize", 10).log().all().
+		  given().queryParam("teamSize", 10).log().all().
 		      
 		      when().get("http://49.249.28.218:8091/project"). 
 		          

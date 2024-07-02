@@ -25,8 +25,8 @@ class Candy  implements Serializable{
 
 public class Run1Serialization {
  public static void main(String[] args) throws Throwable {
-	 Candy user1=new Candy("noushad",10,59588,2);
-	 FileOutputStream fileout=new FileOutputStream("./f.txt");
+	 Candy user1=new Candy("Madhuri DII",10,59588,2);
+	 FileOutputStream fileout=new FileOutputStream("./madhri.txt");
 	 
 	 ObjectOutputStream objout=new ObjectOutputStream(fileout);
 	 objout.writeObject(user1);

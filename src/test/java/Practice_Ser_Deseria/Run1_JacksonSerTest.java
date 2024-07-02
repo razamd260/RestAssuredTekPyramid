@@ -55,7 +55,8 @@ public class Run1_JacksonSerTest {
 	public static void main(String[] args) throws Throwable {
 		Project pobj=new Project("Orange","Noushad",10,"Create");  // Java Object
 		ObjectMapper objmapper=new ObjectMapper();
-		objmapper.writeValue(new File("./project.json"), pobj);// serialization is done   
+		File f=new File("./project.json");
+		objmapper.writeValue(f, pobj);// serialization is done   
 		System.out.println("=======End=========");
 		
 		

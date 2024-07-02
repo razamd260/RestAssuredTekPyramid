@@ -9,6 +9,30 @@
 
   <dependencies>
 	  
+	  <!-- https://mvnrepository.com/artifact/com.sparkjava/spark-core -->
+<dependency>
+    <groupId>com.sparkjava</groupId>
+    <artifactId>spark-core</artifactId>
+    <version>2.9.4</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.11.0</version>
+</dependency>
+
+	  
+	  <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>5.11.0</version>
+    
+</dependency>
+
+	  
 	  <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
 <dependency>
     <groupId>com.jayway.jsonpath</groupId>
@@ -16,6 +40,17 @@
     <version>2.9.0</version>
 </dependency>
 
+       <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
        
 	  <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 <dependency>
@@ -111,7 +146,12 @@
     <scope>test</scope>
 </dependency>
 
-
+	<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>8.0.33</version>
+</dependency>
   </dependencies>
   
   

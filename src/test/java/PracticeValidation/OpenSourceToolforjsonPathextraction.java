@@ -28,7 +28,7 @@ public class OpenSourceToolforjsonPathextraction {
 		         // Capture Multiple Element
 		         
 		         ArrayList<String> list =response.jsonPath().get("content.projectId");
-		         System.out.println();
+		         System.out.println(list);
 		         
 		         
 		         
